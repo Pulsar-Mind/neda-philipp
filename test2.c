@@ -4,7 +4,7 @@
 
 
 
-void print_array(int array[], int len) {
+int print_array(int array[], int len) {
 
 	printf("Array: ");
 	for (int i = 0; i < len; ++i){
@@ -14,6 +14,7 @@ void print_array(int array[], int len) {
 		}
 	}
 	printf("\n");
+	return 0;
 }
 void print_min(int array[], int len) {
 	int min=0;
@@ -25,14 +26,21 @@ void print_min(int array[], int len) {
   	}
   	else{
     if (array[i]<min){
-     min=array[i];
+     	min=array[i];
     }
 	}
 }
-printf("%d",min);
+	printf("%d",min);
 	printf("\n");
+	return;
 }
-void print_max(int array[], int len) {
+
+
+
+
+
+
+int print_max(int array[], int len) {
 	int max=0;
 	printf("Maximum: ");
 	for (int i = 0; i < len; ++i){
@@ -42,20 +50,24 @@ void print_max(int array[], int len) {
     }
 	
 }
-printf("%d",max);
-printf("\n");
+	printf("%d",max);
+	printf("\n");
+	return 0;
+
 }
 
 
-void print_sum(int array[], int len) {
+int print_sum(int array[], int len) {
 	int summe=0;
 
 	printf("Summe: ");
 	for (int i = 0; i < len; ++i){
 		summe +=  array[i];
 	}
-printf("%d",summe);
-printf("\n");
+	printf("%d",summe);
+	printf("\n");
+	return 0;
+
  
 }
 
