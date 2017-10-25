@@ -4,7 +4,7 @@
 
 
 
-int print_array(int array[], int len) {
+void print_array(int array[], int len) {
 
 	printf("Array: ");
 	for (int i = 0; i < len; ++i){
@@ -14,9 +14,9 @@ int print_array(int array[], int len) {
 		}
 	}
 	printf("\n");
-	return 0;
+	return;
 }
-void print_min(int array[], int len) {
+int print_min(int array[], int len) {
 	int min=0;
 
 	printf("Minimum: ");
@@ -32,7 +32,7 @@ void print_min(int array[], int len) {
 }
 	printf("%d",min);
 	printf("\n");
-	return;
+	return 0;
 }
 
 
